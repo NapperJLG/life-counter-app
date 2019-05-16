@@ -11,5 +11,8 @@ LifeCounterController.prototype = {
     return this.view.playerTwoLifeTotalString()
   },
 
-
+  updateDOM: function() {
+    document.getElementById('player-one-total').innerHTML = controller.renderPlayerOneLifeTotal();
+    document.getElementById('player-two-total').innerHTML = controller.renderPlayerTwoLifeTotal();
+  }
 };
