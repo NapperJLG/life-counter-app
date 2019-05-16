@@ -1,13 +1,13 @@
-var LifeCounterView = function(lifecounter) {
-  this.lifecounter = lifecounter
+var LifeCounterView = function() {
+  this.lifecounter = new LifeCounter
 }
 
 LifeCounterView.prototype = {
-  renderPlayerOne: function() {
+  playerOneLifeTotalString: function() {
     return "<p>" + lifecounter._playerOneLifeTotal + "</p>"
   },
 
-  renderPlayerTwo: function() {
+  playerTwoLifeTotalString: function() {
     return "<p>" + lifecounter._playerTwoLifeTotal + "</p>"
   }
 };
