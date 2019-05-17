@@ -9,6 +9,7 @@ LifeCounter.prototype = {
   },
 
   increasePlayerOneLifeTotal: function() {
+    console.log('increasePlayerOneLifeTotal called')
     this._playerOneLifeTotal += 1
   },
 

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <script src="app.js" charset="utf-8"></script>
     <script src="life-counter-model.js" charset="utf-8"></script>
-    <script src="tests/life-counter-model-tests.js" charset="utf-8"></script>
+    <!-- <script src="tests/life-counter-model-tests.js" charset="utf-8"></script> -->
     <script src="life-counter-view.js" charset="utf-8"></script>
-    <script src="tests/life-counter-view-tests.js" charset="utf-8"></script>
+    <!-- <script src="tests/life-counter-view-tests.js" charset="utf-8"></script> -->
     <script src="life-counter-controller.js" charset="utf-8"></script>
-    <script src="tests/life-counter-controller-tests.js" charset="utf-8"></script>
+    <!-- <script src="tests/life-counter-controller-tests.js" charset="utf-8"></script> -->
     <title>Life Counter</title>
   </head>
   <body>
@@ -19,8 +19,13 @@
         <p>20 (hardcoded)</p>
       </div>
       <div class="life-total-change-buttons">
-        <button type="button" name="player-one-increase">+</button>
-        <button type="button" name="player-one-decrease">-</button>
+        <div>
+          <button id="player-one-increase" type="button" name="player-one-increase">+</button>
+        </div>
+        <div>
+          <button id="player-one-decrease" type="button" name="player-one-decrease">-</button>
+        </div>
+
       </div>
     </div>
     <div id="player-two">
@@ -29,12 +34,17 @@
         <p>20 (hardcoded)</p>
       </div>
       <div class="life-total-change-buttons">
-        <button type="button" name="player-two-increase">+</button>
-        <button type="button" name="player-two-decrease">-</button>
+        <div>
+          <button id="player-two-increase" type="button" name="player-two-increase">+</button>
+        </div>
+        <div>
+            <button id="player-two-decrease" type="button" name="player-two-decrease">-</button>
+        </div>
+
       </div>
     </div>
-    <div id="reset-button">
-      <button type="button" name="reset">Reset</button>
+    <div>
+      <button id="reset-button" type="button" name="reset">Reset</button>
     </div>
   </body>
 </html>

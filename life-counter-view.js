@@ -4,10 +4,10 @@ var LifeCounterView = function() {
 
 LifeCounterView.prototype = {
   playerOneLifeTotalString: function() {
-    return "<p>" + lifecounter._playerOneLifeTotal + "</p>"
+    return "<p>" + this.lifecounter._playerOneLifeTotal + "</p>"
   },
 
   playerTwoLifeTotalString: function() {
-    return "<p>" + lifecounter._playerTwoLifeTotal + "</p>"
+    return "<p>" + this.lifecounter._playerTwoLifeTotal + "</p>"
   }
 };
